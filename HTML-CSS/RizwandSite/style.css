@@ -1,0 +1,4 @@
+header {height: 50px; width: 100%; background: teal;}
+section {min-height: 500px; width: 70%; background: skyblue; float: left;}
+aside {height: 500px; width: 30%; background: hotpink; float: right;}
+footer {height: 100px; width: 100%; background: red; clear: both;}

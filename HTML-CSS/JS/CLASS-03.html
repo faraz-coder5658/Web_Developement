@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+        <article>
+                 <label for="">ENTER 1ST NUMBER : </label><input type="text" id="val1"> <br><br>
+                 <label for="">ENTER 2ND NUMBER : </label><input type="text" id="val2"> <br><br>
+                 <button onclick="doadd()">SHOW RESLUT</button><br><br>
+                 <label for="">SHOW RESLUT : </label><input type="text" id="reslut"> <br>
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+    <script>
+              function doadd()
+              {
+                     var num1 = document.getElementById("val1").value;
+                     var num2 = document.getElementById("val2").value;
+
+                     var ans = Number(num1) + Number(num2);
+
+                     document.getElementById("reslut").value = ans;
+              }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            max-width: 980px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-section {
+            max-width: 500px;
+        }
+
+        .left-section h1 {
+            font-size: 48px;
+            color: #1877f2;
+            margin-bottom: 10px;
+        }
+
+        .left-section p {
+            font-size: 24px;
+            color: #606770;
+        }
+
+        .right-section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 360px;
+        }
+
+        .right-section input[type="text"],
+        .right-section input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .right-section button {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #1877f2;
+            color: white;
+            cursor: pointer;
+        }
+
+        .right-section button:hover {
+            background-color: #165fbd;
+        }
+
+        .right-section a {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .right-section hr {
+            border: 0;
+            height: 1px;
+            background: #dddfe2;
+            margin: 20px 0;
+        }
+
+        .right-section .create-account {
+            background-color: #42b72a;
+            color: white;
+        }
+
+        .right-section .create-account:hover {
+            background-color: #36a420;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>facebook</h1>
+            <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+        <div class="right-section">
+            <form>
+                <input type="text" placeholder="Email or Phone" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <a href="#">Forgot Password?</a>
+                <hr>
+                <button type="button" class="create-account">Create New Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

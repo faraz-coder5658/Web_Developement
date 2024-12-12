@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+
+  </header>  
+  <section>
+    <article>
+        <form>
+            <fieldset>
+                <legend>Required Information</legend>
+                <input type="hidden" value="101" />
+                <label>FULLNAME: </label><input type="text" placeholder="abdul Jahan" /><br />
+                <label>EMAIL: </label><input type="email" placeholder="adduljahan@gmail.com" /><br />
+                <label>PASSWORD: </label><input type="password" placeholder="************" /><br />
+                <label>DOB: </label><input type="date" /><br />
+                <label>CURRENT AGE: </label><input type="age" />
+                <label>JOINING MONTH: </label><input type="month" /><br />
+                <label>GENDER: </label>
+                <input type="radio" name="gender" /><label>Male</label>
+                <input type="radio" name="gender" /><label>Female</label>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>LANGUAGES: </label>
+                <input type="checkbox" /><label>ENGLISH</label>
+                <input type="checkbox" /><label>URDU</label>
+                <input type="checkbox" /><label>PUSHTO</label>
+                <input type="checkbox" /><label>ARABIC</label>
+                <input type="checkbox" /><label>INDIAN</label>
+                <input type="checkbox" /><label>CHINESE</label><br />
+                <label>COUNTRY: </label>
+                <select>
+                    <option>PAKISTAN</option>
+                    <option>CHINA</option>
+                    <option>AFGHANISTAN</option>
+                    <option>INDIA</option>
+                    <option>JAPAN</option>
+                </select><br />
+            </fieldset><br />
+            <fieldset>
+                <label>REGION: </label><input type="text" value="KPK" /><br />
+                <label>RELIGION: </label><input type="text" value="ISLAM" readonly /><br />
+                <label>QUALIFICATION: </label><input type="text" disabled /><br />
+                <label>COMMENTS: </label><textarea rows="5" cols="35"></textarea><br>
+                <label>COUNTRY CODE: </label><input type="text" pattern="[a-zA-Z]{2}" title="Please enter two latters country code (pak,af,ind,ir,uk,aus,ksa)" /><br />
+            </fieldset>
+            <input type="reset" />
+            <input type="submit" />
+    </article>
+  </section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .image-container{
+            width: 300px; height: 300px; border: 6px solid #e8e8e8; border-radius: 10px; overflow: hidden;
+           
+          }
+          .image-container img {
+            width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; transition: transform 0.8s ease;
+          }
+          .image-container:hover img{
+            transform: scale(1.7);
+          }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="Image/FARAZ-09.jpg" alt="Zoomable Image" class="zoom-image">
+    </div>
+
+    <script>
+        const image = document.querySelector(".zoom-image");
+        image.addEventListener("mousemove", function(e){
+            const rect = image.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const xpercent = x / rect.width * 100;
+            const ypercent = y / rect.height * 100;
+
+            image.style.transformOrigin = `${xpercent}% ${ypercent}%`;
+        });
+    </script>
+</body>
+</html>
